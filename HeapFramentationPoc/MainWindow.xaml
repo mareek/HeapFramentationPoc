@@ -1,0 +1,17 @@
+﻿<Window x:Class="HeapFramentationPoc.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HeapFramentationPoc"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <DockPanel>
+        <WrapPanel DockPanel.Dock="Top">
+            <Button Name="AllocateButton" Click="AllocateButton_Click">Allocate</Button>
+            <Button Name="FreeSimpleButton" Click="FreeSimpleButton_Click">Free memory (simple)</Button>
+            <Button Name="FreeEnhancedButton" Click="FreeEnhancedButton_Click">Free memory (enhanced)</Button>
+        </WrapPanel>
+        <TextBox  Name="OutputTextBox" VerticalScrollBarVisibility="Auto" IsReadOnly="True"/>
+    </DockPanel>
+</Window>
